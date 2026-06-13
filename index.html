@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coach Daniel Ogunmodede Precious | IJABALL School of Thought</title>
+    <meta name="description" content="Premium football coaching by Coach Daniel Ogunmodede Precious. Join IJABALL School of Thought for world-class football development programs.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif'],
+                        'heading': ['Montserrat', 'sans-serif'],
+                        'display': ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        'gold': '#D4AF37',
+                        'gold-light': '#E8C84A',
+                        'gold-dark': '#B8960C',
+                        'emerald': {
+                            450: '#34D399',
+                        },
+                    },
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-[#0a0a0a] text-white font-sans antialiased overflow-x-hidden">
+
+    <!-- ==================== NAVIGATION ==================== -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 py-4 px-4 md:px-8">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <!-- Logo -->
+            <a href="#hero" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 bg-gradient-to-br from-[#D4AF37] to-[#B8960C] rounded-lg flex items-center justify-center transform group-hover:rotate-6 transition-transform duration-300 shadow-lg shadow-[#D4AF37]/20">
+                    <i data-lucide="shield" class="w-6 h-6 text-[#0a0a0a]"></i>
+                </div>
+                <div>
+                    <span class="font-heading font-extrabold text-lg md:text-xl tracking-tight text-white">IJABALL</span>
+                    <span class="block text-[10px] md:text-xs text-[#D4AF37] font-medium tracking-widest uppercase -mt-1">School of Thought</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <div class="hidden lg:flex items-center gap-1">
+                <a href="#hero" class="nav-link px-4 py-2 text-sm font-medium text-white/80 hover:text-[#D4AF37] transition-colors duration-300 rounded-full hover:bg-white/5">Home</a>
+                <a href="#about" class="nav-link px-4 py-2 text-sm font-medium text-white/80 hover:text-[#D4AF37] transition-colors duration-300 rounded-full hover:bg-white/5">About</a>
+                <a href="#achievements" class="nav-link px-4 py-2 text-sm font-medium text-white/80 hover:text-[#D4AF37] transition-colors duration-300 rounded-full hover:bg-white/5">Achievements</a>
+                <a href="#journey" class="nav-link px-4 py-2 text-sm font-medium text-white/80 hover:text-[#D4AF37] transition-colors duration-300 rounded-full hover:bg-white/5">Journey</a>
+                <a href="#programs" class="nav-link px-4 py-2 text-sm font-medium text-white/80 hover:text-[#D4AF37] transition-colors duration-300 rounded-full hover:bg-white/5">Programs</a>
+                <a href="#gallery" class="nav-link px-4 py-2 text-sm font-medium text-white/80 hover:text-[#D4AF37] transition-colors duration-300 rounded-full hover:bg-white/5">Gallery</a>
+                <a href="#blog" class="nav-link px-4 py-2 text-sm font-medium text-white/80 hover:text-[#D4AF37] transition-colors duration-300 rounded-full hover:bg-white/5">Blog</a>
+                <a href="#contact" class="nav-link ml-2 px-6 py-2.5 text-sm font-bold bg-gradient-to-r from-[#D4AF37] to-[#B8960C] text-[#0a0a0a] rounded-full hover:shadow-lg hover:shadow-[#D4AF37]/30 transition-all duration-300 transform hover:-translate-y-0.5">Contact</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobileMenuBtn" class="lg:hidden relative z-50 w-10 h-10 flex items-center justify-center rounded-full bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300">
+                <i data-lucide="menu" id="menuIcon" class="w-5 h-5 text-white"></i>
+                <i data-lucide="x" id="closeIcon" class="w-5 h-5 text-white hidden"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobileMenu" class="fixed inset-0 bg-[#0a0a0a]/98 backdrop-blur-2xl z-40 flex flex-col items-center justify-center gap-6 opacity-0 pointer-events-none transition-all duration-500">
+            <a href="#hero" class="mobile-link text-2xl font-heading font-bold text-white/90 hover:text-[#D4AF37] transition-colors duration-300">Home</a>
+            <a href="#about" class="mobile-link text-2xl font-heading font-bold text-white/90 hover:text-[#D4AF37] transition-colors duration-300">About</a>
+            <a href="#achievements" class="mobile-link text-2xl font-heading font-bold text-white/90 hover:text-[#D4AF37] transition-colors duration-300">Achievements</a>
+            <a href="#journey" class="mobile-link text-2xl font-heading font-bold text-white/90 hover:text-[#D4AF37] transition-colors duration-300">Journey</a>
+            <a href="#programs" class="mobile-link text-2xl font-heading font-bold text-white/90 hover:text-[#D4AF37] transition-colors duration-300">Programs</a>
+            <a href="#gallery" class="mobile-link text-2xl font-heading font-bold text-white/90 hover:text-[#D4AF37] transition-colors duration-300">Gallery</a>
+            <a href="#blog" class="mobile-link text-2xl font-heading font-bold text-white/90 hover:text-[#D4AF37] transition-colors duration-300">Blog</a>
+            <a href="#contact" class="mobile-link mt-4 px-8 py-3 text-xl font-heading font-bold bg-gradient-to-r from-[#D4AF37] to-[#B8960C] text-[#0a0a0a] rounded-full">Contact</a>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <!-- Parallax Background -->
+        <div id="heroBg" class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('img/hero.jpg');">
+            <div class="absolute inset-0 bg-gradient-to-b from-[#0a0a0a]/90 via-[#0a0a0a]/70 to-[#0a0a0a]"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-[#059669]/10 via-transparent to-[#D4AF37]/10"></div>
+        </div>
+
+        <!-- Animated Particles / Floating shapes -->
+        <div class="absolute inset-0 overflow-hidden pointer-events-none">
+            <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-[#059669]/5 rounded-full blur-3xl animate-pulse"></div>
+            <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[#D4AF37]/5 rounded-full blur-3xl animate-pulse" style="animation-delay: 2s;"></div>
+            <div class="absolute top-1/3 right-1/3 w-48 h-48 bg-white/3 rounded-full blur-2xl animate-pulse" style="animation-delay: 4s;"></div>
+        </div>
+
+        <!-- Hero Content -->
+        <div class="relative z-10 max-w-7xl mx-auto px-4 md:px-8 text-center py-20">
+            <!-- Badge -->
+            <div class="fade-up inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 backdrop-blur-md border border-white/10 mb-8">
+                <div class="w-2 h-2 rounded-full bg-[#10B981] animate-pulse"></div>
+                <span class="text-xs md:text-sm font-medium text-white/80 tracking-widest uppercase">IJABALL School of Thought</span>
+            </div>
+
+            <!-- Main Heading -->
+            <h1 class="fade-up stagger-1 font-heading font-extrabold text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-none tracking-tight mb-6">
+                <span class="block text-white">Coach Daniel</span>
+                <span class="block bg-gradient-to-r from-[#D4AF37] via-[#E8C84A] to-[#D4AF37] bg-clip-text text-transparent">Ogunmodede</span>
+                <span class="block text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl mt-2">Precious</span>
+            </h1>
+
+            <!-- Tagline -->
+            <p class="fade-up stagger-2 max-w-2xl mx-auto text-lg md:text-xl text-white/60 font-light leading-relaxed mb-10">
+                Transforming raw talent into football excellence. A legacy of discipline, strategy, and passion — crafting the next generation of elite footballers.
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="fade-up stagger-3 flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#programs" class="group px-8 py-4 bg-gradient-to-r from-[#D4AF37] to-[#B8960C] text-[#0a0a0a] font-bold rounded-full text-lg transition-all duration-300 hover:shadow-2xl hover:shadow-[#D4AF37]/40 transform hover:-translate-y-1">
+                    Explore Programs
+                    <i data-lucide="arrow-right" class="inline-block w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform"></i>
+                </a>
+                <a href="#about" class="group px-8 py-4 bg-white/5 backdrop-blur-sm border border-white/20 text-white font-semibold rounded-full text-lg transition-all duration-300 hover:bg-white/10 hover:border-[#D4AF37]/50 transform hover:-translate-y-1">
+                    <i data-lucide="play-circle" class="inline-block w-5 h-5 mr-2"></i>
+                    Meet the Coach
+                </a>
+            </div>
+
+            <!-- Hero Stats -->
+            <div class="fade-up stagger-4 grid grid-cols-3 gap-6 md:gap-12 max-w-2xl mx-auto mt-16 pt-8 border-t border-white/10">
+                <div>
+                    <span class="block text-3xl md:text-4xl font-heading font-extrabold text-[#D4AF37]">15+</span>
+                    <span class="text-xs md:text-sm text-white/50 uppercase tracking-wider">Years Experience</span>
+                </div>
+                <div>
+                    <span class="block text-3xl md:text-4xl font-heading font-extrabold text-[#10B981]">200+</span>
+                    <span class="text-xs md:text-sm text-white/50 uppercase tracking-wider">Players Trained</span>
+                </div>
+                <div>
+                    <span class="block text-3xl md:text-4xl font-heading font-extrabold text-[#D4AF37]">50+</span>
+                    <span class="text-xs md:text-sm text-white/50 uppercase tracking-wider">Tournament Wins</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 animate-bounce">
+            <div class="w-6 h-10 rounded-full border-2 border-white/30 flex items-start justify-center p-1.5">
+                <div class="w-1.5 h-3 rounded-full bg-[#D4AF37] animate-pulse"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== ABOUT / COACH PROFILE ==================== -->
+    <section id="about" class="relative py-20 md:py-32 px-4 md:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+                <!-- Coach Image -->
+                <div class="reveal relative">
+                    <div class="relative rounded-3xl overflow-hidden aspect-[3/4] max-w-md mx-auto">
+                        <img src="img/Coach.jpeg" alt="Coach Daniel Ogunmodede Precious" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0a]/80 via-transparent to-transparent"></div>
+                        <!-- Floating badge -->
+                        <div class="absolute bottom-6 left-6 right-6 bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-4">
+                            <div class="flex items-center gap-3">
+                                <div class="w-12 h-12 rounded-full bg-gradient-to-br from-[#D4AF37] to-[#B8960C] flex items-center justify-center">
+                                    <i data-lucide="award" class="w-6 h-6 text-[#0a0a0a]"></i>
+                                </div>
+                                <div>
+                                    <p class="font-heading font-bold text-white text-sm">UEFA Licensed Coach</p>
+                                    <p class="text-xs text-white/60">Professional Certification</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Decorative elements -->
+                    <div class="absolute -top-6 -right-6 w-24 h-24 border-2 border-[#D4AF37]/30 rounded-2xl -z-10 hidden md:block"></div>
+                    <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-[#059669]/10 rounded-3xl -z-10 hidden md:block"></div>
+                </div>
+
+                <!-- Coach Info -->
+                <div class="reveal">
+                    <span class="inline-block text-[#10B981] text-sm font-semibold tracking-widest uppercase mb-4">The Coach</span>
+                    <h2 class="font-heading font-extrabold text-4xl md:text-5xl lg:text-6xl leading-tight mb-6">
+                        A Visionary in
+                        <span class="bg-gradient-to-r from-[#D4AF37] to-[#E8C84A] bg-clip-text text-transparent">Football Development</span>
+                    </h2>
+                    <p class="text-white/60 text-lg leading-relaxed mb-6">
+                        Coach Daniel Ogunmodede Precious is the founder and head coach of IJABALL School of Thought — a revolutionary football development institution dedicated to nurturing talent through a unique blend of tactical intelligence, physical conditioning, and mental fortitude.
+                    </p>
+                    <p class="text-white/60 text-lg leading-relaxed mb-8">
+                        With over 15 years of coaching experience across multiple continents, Coach Daniel has developed a proprietary training methodology that has produced professional players now competing in top leagues worldwide. His philosophy centers on holistic development — building not just athletes, but leaders.
+                    </p>
+
+                    <!-- Quick Info Cards -->
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4 hover:border-[#D4AF37]/40 transition-all duration-300">
+                            <i data-lucide="map-pin" class="w-5 h-5 text-[#D4AF37] mb-2"></i>
+                            <p class="text-xs text-white/50 uppercase tracking-wider">Based In</p>
+                            <p class="font-semibold text-white">Lagos, Nigeria</p>
+                        </div>
+                        <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4 hover:border-[#10B981]/40 transition-all duration-300">
+                            <i data-lucide="globe" class="w-5 h-5 text-[#10B981] mb-2"></i>
+                            <p class="text-xs text-white/50 uppercase tracking-wider">Global Reach</p>
+                            <p class="font-semibold text-white">12+ Countries</p>
+                        </div>
+                        <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4 hover:border-[#D4AF37]/40 transition-all duration-300">
+                            <i data-lucide="users" class="w-5 h-5 text-[#D4AF37] mb-2"></i>
+                            <p class="text-xs text-white/50 uppercase tracking-wider">Students</p>
+                            <p class="font-semibold text-white">200+ Graduates</p>
+                        </div>
+                        <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4 hover:border-[#10B981]/40 transition-all duration-300">
+                            <i data-lucide="trophy" class="w-5 h-5 text-[#10B981] mb-2"></i>
+                            <p class="text-xs text-white/50 uppercase tracking-wider">Honors</p>
+                            <p class="font-semibold text-white">50+ Trophies</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== ACHIEVEMENTS / STATS ==================== -->
+    <section id="achievements" class="relative py-20 md:py-32 px-4 md:px-8 bg-[#0d0d0d]">
+        <!-- Background pattern -->
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute inset-0" style="background-image: radial-gradient(circle, #D4AF37 1px, transparent 1px); background-size: 40px 40px;"></div>
+        </div>
+
+        <div class="relative max-w-7xl mx-auto">
+            <div class="text-center mb-16 reveal">
+                <span class="inline-block text-[#D4AF37] text-sm font-semibold tracking-widest uppercase mb-4">Excellence in Numbers</span>
+                <h2 class="font-heading font-extrabold text-4xl md:text-5xl lg:text-6xl leading-tight mb-4">
+                    A Legacy of
+                    <span class="bg-gradient-to-r from-[#10B981] to-[#34D399] bg-clip-text text-transparent">Achievement</span>
+                </h2>
+                <p class="max-w-xl mx-auto text-white/50 text-lg">Milestones that define a career dedicated to football excellence and player development.</p>
+            </div>
+
+            <!-- Stats Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+                <div class="reveal stat-card bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 md:p-8 text-center hover:border-[#D4AF37]/40 transition-all duration-500 hover:shadow-2xl hover:shadow-[#D4AF37]/10 group">
+                    <div class="w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-br from-[#D4AF37]/20 to-[#B8960C]/20 flex items-center justify-center group-hover:from-[#D4AF37]/30 group-hover:to-[#B8960C]/30 transition-all duration-500">
+                        <i data-lucide="calendar-days" class="w-8 h-8 text-[#D4AF37]"></i>
+                    </div>
+                    <span class="counter block text-4xl md:text-5xl font-heading font-extrabold text-white mb-2" data-target="15">0</span>
+                    <span class="text-[#D4AF37] text-2xl font-heading font-bold">+</span>
+                    <p class="text-white/50 text-sm uppercase tracking-wider mt-1">Years Experience</p>
+                </div>
+
+                <div class="reveal stat-card bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 md:p-8 text-center hover:border-[#10B981]/40 transition-all duration-500 hover:shadow-2xl hover:shadow-[#10B981]/10 group">
+                    <div class="w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-br from-[#10B981]/20 to-[#059669]/20 flex items-center justify-center group-hover:from-[#10B981]/30 group-hover:to-[#059669]/30 transition-all duration-500">
+                        <i data-lucide="users" class="w-8 h-8 text-[#10B981]"></i>
+                    </div>
+                    <span class="counter block text-4xl md:text-5xl font-heading font-extrabold text-white mb-2" data-target="200">0</span>
+                    <span class="text-[#10B981] text-2xl font-heading font-bold">+</span>
+                    <p class="text-white/50 text-sm uppercase tracking-wider mt-1">Players Trained</p>
+                </div>
+
+                <div class="reveal stat-card bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 md:p-8 text-center hover:border-[#D4AF37]/40 transition-all duration-500 hover:shadow-2xl hover:shadow-[#D4AF37]/10 group">
+                    <div class="w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-br from-[#D4AF37]/20 to-[#B8960C]/20 flex items-center justify-center group-hover:from-[#D4AF37]/30 group-hover:to-[#B8960C]/30 transition-all duration-500">
+                        <i data-lucide="trophy" class="w-8 h-8 text-[#D4AF37]"></i>
+                    </div>
+                    <span class="counter block text-4xl md:text-5xl font-heading font-extrabold text-white mb-2" data-target="50">0</span>
+                    <span class="text-[#D4AF37] text-2xl font-heading font-bold">+</span>
+                    <p class="text-white/50 text-sm uppercase tracking-wider mt-1">Tournament Wins</p>
+                </div>
+
+                <div class="reveal stat-card bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 md:p-8 text-center hover:border-[#10B981]/40 transition-all duration-500 hover:shadow-2xl hover:shadow-[#10B981]/10 group">
+                    <div class="w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-br from-[#10B981]/20 to-[#059669]/20 flex items-center justify-center group-hover:from-[#10B981]/30 group-hover:to-[#059669]/30 transition-all duration-500">
+                        <i data-lucide="globe" class="w-8 h-8 text-[#10B981]"></i>
+                    </div>
+                    <span class="counter block text-4xl md:text-5xl font-heading font-extrabold text-white mb-2" data-target="12">0</span>
+                    <span class="text-[#10B981] text-2xl font-heading font-bold">+</span>
+                    <p class="text-white/50 text-sm uppercase tracking-wider mt-1">Countries Reached</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== COACHING JOURNEY / TIMELINE ==================== -->
+    <section id="journey" class="relative py-20 md:py-32 px-4 md:px-8">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16 reveal">
+                <span class="inline-block text-[#10B981] text-sm font-semibold tracking-widest uppercase mb-4">The Journey</span>
+                <h2 class="font-heading font-extrabold text-4xl md:text-5xl lg:text-6xl leading-tight mb-4">
+                    From
+                    <span class="bg-gradient-to-r from-[#D4AF37] to-[#E8C84A] bg-clip-text text-transparent">Passion</span>
+                    to Profession
+                </h2>
+                <p class="max-w-xl mx-auto text-white/50 text-lg">A timeline of dedication, growth, and impact in the world of football coaching.</p>
+            </div>
+
+            <!-- Timeline -->
+            <div class="relative">
+                <!-- Center line -->
+                <div class="absolute left-4 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-[#D4AF37]/50 via-white/10 to-[#10B981]/50 transform md:-translate-x-px"></div>
+
+                <!-- Timeline Items -->
+                <div class="space-y-12">
+                    <div class="reveal relative pl-12 md:pl-0">
+                        <div class="md:flex md:items-center md:gap-8">
+                            <div class="hidden md:block md:w-1/2 md:text-right md:pr-12">
+                                <span class="text-[#D4AF37] font-heading font-bold text-lg">2008</span>
+                                <h3 class="font-heading font-bold text-xl text-white mt-1">The Beginning</h3>
+                                <p class="text-white/50 text-sm mt-2">Started as an assistant coach at a local youth academy, discovering a deep passion for player development.</p>
+                            </div>
+                            <div class="absolute left-1.5 md:left-1/2 w-5 h-5 rounded-full bg-[#D4AF37] border-4 border-[#0a0a0a] shadow-lg shadow-[#D4AF37]/30 transform -translate-x-1/2 z-10"></div>
+                            <div class="md:w-1/2 md:pl-12">
+                                <span class="md:hidden text-[#D4AF37] font-heading font-bold text-lg">2008</span>
+                                <h3 class="md:hidden font-heading font-bold text-xl text-white mt-1">The Beginning</h3>
+                                <p class="md:hidden text-white/50 text-sm mt-2">Started as an assistant coach at a local youth academy, discovering a deep passion for player development.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reveal relative pl-12 md:pl-0">
+                        <div class="md:flex md:items-center md:gap-8 md:flex-row-reverse">
+                            <div class="hidden md:block md:w-1/2 md:pl-12">
+                                <span class="text-[#10B981] font-heading font-bold text-lg">2012</span>
+                                <h3 class="font-heading font-bold text-xl text-white mt-1">UEFA Certification</h3>
+                                <p class="text-white/50 text-sm mt-2">Earned UEFA coaching licenses, studying advanced tactical methodologies across Europe's top academies.</p>
+                            </div>
+                            <div class="absolute left-1.5 md:left-1/2 w-5 h-5 rounded-full bg-[#10B981] border-4 border-[#0a0a0a] shadow-lg shadow-[#10B981]/30 transform -translate-x-1/2 z-10"></div>
+                            <div class="md:w-1/2 md:text-right md:pr-12">
+                                <span class="md:hidden text-[#10B981] font-heading font-bold text-lg">2012</span>
+                                <h3 class="md:hidden font-heading font-bold text-xl text-white mt-1">UEFA Certification</h3>
+                                <p class="md:hidden text-white/50 text-sm mt-2">Earned UEFA coaching licenses, studying advanced tactical methodologies.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reveal relative pl-12 md:pl-0">
+                        <div class="md:flex md:items-center md:gap-8">
+                            <div class="hidden md:block md:w-1/2 md:text-right md:pr-12">
+                                <span class="text-[#D4AF37] font-heading font-bold text-lg">2016</span>
+                                <h3 class="font-heading font-bold text-xl text-white mt-1">IJABALL Founded</h3>
+                                <p class="text-white/50 text-sm mt-2">Established IJABALL School of Thought, a unique football development institution in Lagos, Nigeria.</p>
+                            </div>
+                            <div class="absolute left-1.5 md:left-1/2 w-5 h-5 rounded-full bg-[#D4AF37] border-4 border-[#0a0a0a] shadow-lg shadow-[#D4AF37]/30 transform -translate-x-1/2 z-10"></div>
+                            <div class="md:w-1/2 md:pl-12">
+                                <span class="md:hidden text-[#D4AF37] font-heading font-bold text-lg">2016</span>
+                                <h3 class="md:hidden font-heading font-bold text-xl text-white mt-1">IJABALL Founded</h3>
+                                <p class="md:hidden text-white/50 text-sm mt-2">Established IJABALL School of Thought in Lagos, Nigeria.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reveal relative pl-12 md:pl-0">
+                        <div class="md:flex md:items-center md:gap-8 md:flex-row-reverse">
+                            <div class="hidden md:block md:w-1/2 md:pl-12">
+                                <span class="text-[#10B981] font-heading font-bold text-lg">2020</span>
+                                <h3 class="font-heading font-bold text-xl text-white mt-1">Global Recognition</h3>
+                                <p class="text-white/50 text-sm mt-2">Invited to speak at international coaching conferences. Players begin signing professional contracts in Europe.</p>
+                            </div>
+                            <div class="absolute left-1.5 md:left-1/2 w-5 h-5 rounded-full bg-[#10B981] border-4 border-[#0a0a0a] shadow-lg shadow-[#10B981]/30 transform -translate-x-1/2 z-10"></div>
+                            <div class="md:w-1/2 md:text-right md:pr-12">
+                                <span class="md:hidden text-[#10B981] font-heading font-bold text-lg">2020</span>
+                                <h3 class="md:hidden font-heading font-bold text-xl text-white mt-1">Global Recognition</h3>
+                                <p class="md:hidden text-white/50 text-sm mt-2">Players begin signing professional contracts in Europe.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reveal relative pl-12 md:pl-0">
+                        <div class="md:flex md:items-center md:gap-8">
+                            <div class="hidden md:block md:w-1/2 md:text-right md:pr-12">
+                                <span class="text-[#D4AF37] font-heading font-bold text-lg">2024</span>
+                                <h3 class="font-heading font-bold text-xl text-white mt-1">The Future</h3>
+                                <p class="text-white/50 text-sm mt-2">Expanding IJABALL globally with online programs, international partnerships, and a state-of-the-art training facility.</p>
+                            </div>
+                            <div class="absolute left-1.5 md:left-1/2 w-5 h-5 rounded-full bg-gradient-to-br from-[#D4AF37] to-[#10B981] border-4 border-[#0a0a0a] shadow-lg shadow-[#D4AF37]/30 transform -translate-x-1/2 z-10"></div>
+                            <div class="md:w-1/2 md:pl-12">
+                                <span class="md:hidden text-[#D4AF37] font-heading font-bold text-lg">2024</span>
+                                <h3 class="md:hidden font-heading font-bold text-xl text-white mt-1">The Future</h3>
+                                <p class="md:hidden text-white/50 text-sm mt-2">Expanding IJABALL globally with online programs and partnerships.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTBALL PROGRAMS ==================== -->
+    <section id="programs" class="relative py-20 md:py-32 px-4 md:px-8 bg-[#0d0d0d]">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 reveal">
+                <span class="inline-block text-[#D4AF37] text-sm font-semibold tracking-widest uppercase mb-4">Our Programs</span>
+                <h2 class="font-heading font-extrabold text-4xl md:text-5xl lg:text-6xl leading-tight mb-4">
+                    Elite
+                    <span class="bg-gradient-to-r from-[#10B981] to-[#34D399] bg-clip-text text-transparent">Training Programs</span>
+                </h2>
+                <p class="max-w-xl mx-auto text-white/50 text-lg">Comprehensive football development programs designed for every age and skill level.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                <!-- Program 1 -->
+                <div class="reveal program-card group bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-6 md:p-8 transition-all duration-500 hover:border-[#D4AF37]/40 hover:shadow-2xl hover:shadow-[#D4AF37]/10 hover:-translate-y-2">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#D4AF37]/20 to-[#B8960C]/20 flex items-center justify-center mb-6 group-hover:from-[#D4AF37]/30 group-hover:to-[#B8960C]/30 transition-all duration-500">
+                        <i data-lucide="baby" class="w-7 h-7 text-[#D4AF37]"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-white mb-3">Youth Development</h3>
+                    <p class="text-white/50 text-sm leading-relaxed mb-4">Foundation-level training for ages 6-12, focusing on fundamentals, coordination, and a love for the game.</p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center gap-2 text-sm text-white/60"><i data-lucide="check-circle" class="w-4 h-4 text-[#10B981]"></i> Ages 6-12</li>
+                        <li class="flex items-center gap-2 text-sm text-white/60"><i data-lucide="check-circle" class="w-4 h-4 text-[#10B981]"></i> 3 sessions/week</li>
+                        <li class="flex items-center gap-2 text-sm text-white/60"><i data-lucide="check-circle" class="w-4 h-4 text-[#10B981]"></i> Fun & Fundamentals</li>
+                    </ul>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-[#D4AF37] font-semibold text-sm group-hover:gap-3 transition-all">
+                        Learn More <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <!-- Program 2 -->
+                <div class="reveal program-card group bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-6 md:p-8 transition-all duration-500 hover:border-[#10B981]/40 hover:shadow-2xl hover:shadow-[#10B981]/10 hover:-translate-y-2">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#10B981]/20 to-[#059669]/20 flex items-center justify-center mb-6 group-hover:from-[#10B981]/30 group-hover:to-[#059669]/30 transition-all duration-500">
+                        <i data-lucide="zap" class="w-7 h-7 text-[#10B981]"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-white mb-3">Elite Academy</h3>
+                    <p class="text-white/50 text-sm leading-relaxed mb-4">Advanced training for ages 13-18, preparing talented players for professional opportunities and scholarships.</p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center gap-2 text-sm text-white/60"><i data-lucide="check-circle" class="w-4 h-4 text-[#10B981]"></i> Ages 13-18</li>
+                        <li class="flex items-center gap-2 text-sm text-white/60"><i data-lucide="check-circle" class="w-4 h-4 text-[#10B981]"></i> 5 sessions/week</li>
+                        <li class="flex items-center gap-2 text-sm text-white/60"><i data-lucide="check-circle" class="w-4 h-4 text-[#10B981]"></i> Tactical & Technical</li>
+                    </ul>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-[#10B981] font-semibold text-sm group-hover:gap-3 transition-all">
+                        Learn More <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <!-- Program 3 -->
+                <div class="reveal program-card group bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-6 md:p-8 transition-all duration-500 hover:border-[#D4AF37]/40 hover:shadow-2xl hover:shadow-[#D4AF37]/10 hover:-translate-y-2">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#D4AF37]/20 to-[#B8960C]/20 flex items-center justify-center mb-6 group-hover:from-[#D4AF37]/30 group-hover:to-[#B8960C]/30 transition-all duration-500">
+                        <i data-lucide="target" class="w-7 h-7 text-[#D4AF37]"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-white mb-3">Tactical Masterclass</h3>
+                    <p class="text-white/50 text-sm leading-relaxed mb-4">In-depth tactical analysis sessions for serious players and aspiring coaches who want to understand the game deeply.</p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center gap-2 text-sm text-white/60"><i data-lucide="check-circle" class="w-4 h-4 text-[#10B981]"></i> All ages 16+</li>
+                        <li class="flex items-center gap-2 text-sm text-white/60"><i data-lucide="check-circle" class="w-4 h-4 text-[#10B981]"></i> Video analysis</li>
+                        <li class="flex items-center gap-2 text-sm text-white/60"><i data-lucide="check-circle" class="w-4 h-4 text-[#10B981]"></i> Position-specific</li>
+                    </ul>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-[#D4AF37] font-semibold text-sm group-hover:gap-3 transition-all">
+                        Learn More <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <!-- Program 4 -->
+                <div class="reveal program-card group bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-6 md:p-8 transition-all duration-500 hover:border-[#10B981]/40 hover:shadow-2xl hover:shadow-[#10B981]/10 hover:-translate-y-2">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#10B981]/20 to-[#059669]/20 flex items-center justify-center mb-6 group-hover:from-[#10B981]/30 group-hover:to-[#059669]/30 transition-all duration-500">
+                        <i data-lucide="hand" class="w-7 h-7 text-[#10B981]"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-white mb-3">Goalkeeper Training</h3>
+                    <p class="text-white/50 text-sm leading-relaxed mb-4">Specialized goalkeeper coaching covering shot-stopping, distribution, positioning, and mental resilience.</p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center gap-2 text-sm text-white/60"><i data-lucide="check-circle" class="w-4 h-4 text-[#10B981]"></i> All ages</li>
+                        <li class="flex items-center gap-2 text-sm text-white/60"><i data-lucide="check-circle" class="w-4 h-4 text-[#10B981]"></i> 1-on-1 coaching</li>
+                        <li class="flex items-center gap-2 text-sm text-white/60"><i data-lucide="check-circle" class="w-4 h-4 text-[#10B981]"></i> Modern techniques</li>
+                    </ul>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-[#10B981] font-semibold text-sm group-hover:gap-3 transition-all">
+                        Learn More <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <!-- Program 5 -->
+                <div class="reveal program-card group bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-6 md:p-8 transition-all duration-500 hover:border-[#D4AF37]/40 hover:shadow-2xl hover:shadow-[#D4AF37]/10 hover:-translate-y-2">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#D4AF37]/20 to-[#B8960C]/20 flex items-center justify-center mb-6 group-hover:from-[#D4AF37]/30 group-hover:to-[#B8960C]/30 transition-all duration-500">
+                        <i data-lucide="brain" class="w-7 h-7 text-[#D4AF37]"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-white mb-3">Mental Conditioning</h3>
+                    <p class="text-white/50 text-sm leading-relaxed mb-4">Build the champion's mindset with sports psychology, confidence training, and mental toughness exercises.</p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center gap-2 text-sm text-white/60"><i data-lucide="check-circle" class="w-4 h-4 text-[#10B981]"></i> All athletes</li>
+                        <li class="flex items-center gap-2 text-sm text-white/60"><i data-lucide="check-circle" class="w-4 h-4 text-[#10B981]"></i> Group workshops</li>
+                        <li class="flex items-center gap-2 text-sm text-white/60"><i data-lucide="check-circle" class="w-4 h-4 text-[#10B981]"></i> Performance psychology</li>
+                    </ul>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-[#D4AF37] font-semibold text-sm group-hover:gap-3 transition-all">
+                        Learn More <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <!-- Program 6 -->
+                <div class="reveal program-card group bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-6 md:p-8 transition-all duration-500 hover:border-[#10B981]/40 hover:shadow-2xl hover:shadow-[#10B981]/10 hover:-translate-y-2">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#10B981]/20 to-[#059669]/20 flex items-center justify-center mb-6 group-hover:from-[#10B981]/30 group-hover:to-[#059669]/30 transition-all duration-500">
+                        <i data-lucide="globe" class="w-7 h-7 text-[#10B981]"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-white mb-3">Online Coaching</h3>
+                    <p class="text-white/50 text-sm leading-relaxed mb-4">Remote training programs with personalized feedback, video analysis, and virtual tactical sessions worldwide.</p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center gap-2 text-sm text-white/60"><i data-lucide="check-circle" class="w-4 h-4 text-[#10B981]"></i> Global access</li>
+                        <li class="flex items-center gap-2 text-sm text-white/60"><i data-lucide="check-circle" class="w-4 h-4 text-[#10B981]"></i> Flexible schedule</li>
+                        <li class="flex items-center gap-2 text-sm text-white/60"><i data-lucide="check-circle" class="w-4 h-4 text-[#10B981]"></i> 1-on-1 mentorship</li>
+                    </ul>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-[#10B981] font-semibold text-sm group-hover:gap-3 transition-all">
+                        Learn More <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== GALLERY ==================== -->
+    <section id="gallery" class="relative py-20 md:py-32 px-4 md:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 reveal">
+                <span class="inline-block text-[#10B981] text-sm font-semibold tracking-widest uppercase mb-4">Gallery</span>
+                <h2 class="font-heading font-extrabold text-4xl md:text-5xl lg:text-6xl leading-tight mb-4">
+                    Moments of
+                    <span class="bg-gradient-to-r from-[#D4AF37] to-[#E8C84A] bg-clip-text text-transparent">Greatness</span>
+                </h2>
+                <p class="max-w-xl mx-auto text-white/50 text-lg">Capturing the passion, dedication, and triumph of our players and coaching sessions.</p>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-5">
+                <div class="reveal gallery-item group relative rounded-2xl overflow-hidden aspect-square md:col-span-2 md:row-span-2 cursor-pointer">
+                    <img src="img/training_session.png" alt="Training session" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0a]/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
+                        <div>
+                            <span class="text-[#D4AF37] text-xs font-semibold uppercase tracking-wider">Training</span>
+                            <p class="text-white font-bold text-lg">Elite Session Drills</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="reveal gallery-item group relative rounded-2xl overflow-hidden aspect-square cursor-pointer">
+                    <img src="img/matchday.jpeg" alt="Match day" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0a]/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-4">
+                        <div>
+                            <span class="text-[#10B981] text-xs font-semibold uppercase tracking-wider">Match</span>
+                            <p class="text-white font-bold">Tournament Finals</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="reveal gallery-item group relative rounded-2xl overflow-hidden aspect-square cursor-pointer">
+                    <img src="img/team_celebration.jpeg" alt="Team celebration" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0a]/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-4">
+                        <div>
+                            <span class="text-[#D4AF37] text-xs font-semibold uppercase tracking-wider">Victory</span>
+                            <p class="text-white font-bold">Team Celebration</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="reveal gallery-item group relative rounded-2xl overflow-hidden aspect-square cursor-pointer">
+                    <img src="img/training_ground.jpg" alt="Training ground" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0a]/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-4">
+                        <div>
+                            <span class="text-[#10B981] text-xs font-semibold uppercase tracking-wider">Facility</span>
+                            <p class="text-white font-bold">Training Ground</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="reveal gallery-item group relative rounded-2xl overflow-hidden aspect-square md:col-span-2 cursor-pointer">
+                    <img src="img/coach_moment.jpeg" alt="Coaching moment" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0a]/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-5">
+                        <div>
+                            <span class="text-[#D4AF37] text-xs font-semibold uppercase tracking-wider">Coaching</span>
+                            <p class="text-white font-bold text-lg">Tactical Briefing</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="reveal gallery-item group relative rounded-2xl overflow-hidden aspect-square cursor-pointer">
+                    <img src="img/recognition.jpeg" alt="Award ceremony" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0a]/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-4">
+                        <div>
+                            <span class="text-[#D4AF37] text-xs font-semibold uppercase tracking-wider">Awards</span>
+                            <p class="text-white font-bold">Recognition</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="reveal gallery-item group relative rounded-2xl overflow-hidden aspect-square cursor-pointer">
+                    <img src="img/youth_training.jpeg" alt="Youth training" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0a]/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-4">
+                        <div>
+                            <span class="text-[#10B981] text-xs font-semibold uppercase tracking-wider">Youth</span>
+                            <p class="text-white font-bold">Future Stars</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== TESTIMONIALS ==================== -->
+    <section id="testimonials" class="relative py-20 md:py-32 px-4 md:px-8 bg-[#0d0d0d] overflow-hidden">
+        <!-- Background glow -->
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#D4AF37]/3 rounded-full blur-[120px]"></div>
+
+        <div class="relative max-w-6xl mx-auto">
+            <div class="text-center mb-16 reveal">
+                <span class="inline-block text-[#D4AF37] text-sm font-semibold tracking-widest uppercase mb-4">Testimonials</span>
+                <h2 class="font-heading font-extrabold text-4xl md:text-5xl lg:text-6xl leading-tight mb-4">
+                    Words From
+                    <span class="bg-gradient-to-r from-[#10B981] to-[#34D399] bg-clip-text text-transparent">Our Community</span>
+                </h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6 md:gap-8">
+                <div class="reveal testimonial-card bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-6 md:p-8 transition-all duration-500 hover:border-[#D4AF37]/30 hover:-translate-y-2">
+                    <div class="flex gap-1 mb-4">
+                        <i data-lucide="star" class="w-5 h-5 text-[#D4AF37] fill-[#D4AF37]"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-[#D4AF37] fill-[#D4AF37]"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-[#D4AF37] fill-[#D4AF37]"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-[#D4AF37] fill-[#D4AF37]"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-[#D4AF37] fill-[#D4AF37]"></i>
+                    </div>
+                    <p class="text-white/70 text-sm leading-relaxed mb-6 italic">"Coach Daniel transformed my son's game completely. The discipline, tactical awareness, and confidence he gained at IJABALL are invaluable. He's now playing at a professional academy in Europe."</p>
+                    <div class="flex items-center gap-3 border-t border-white/10 pt-4">
+                        <img src="https://source.unsplash.com/48x48/?soccer,player" alt="Parent" class="w-10 h-10 rounded-full object-cover">
+                        <div>
+                            <p class="font-semibold text-white text-sm">Mrs. Adebayo</p>
+                            <p class="text-xs text-white/50">Parent of Academy Player</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reveal testimonial-card bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-6 md:p-8 transition-all duration-500 hover:border-[#10B981]/30 hover:-translate-y-2">
+                    <div class="flex gap-1 mb-4">
+                        <i data-lucide="star" class="w-5 h-5 text-[#D4AF37] fill-[#D4AF37]"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-[#D4AF37] fill-[#D4AF37]"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-[#D4AF37] fill-[#D4AF37]"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-[#D4AF37] fill-[#D4AF37]"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-[#D4AF37] fill-[#D4AF37]"></i>
+                    </div>
+                    <p class="text-white/70 text-sm leading-relaxed mb-6 italic">"The tactical masterclass program opened my eyes to a whole new dimension of football. Coach Daniel's deep understanding of the game is incredible. This is world-class coaching right here in Lagos."</p>
+                    <div class="flex items-center gap-3 border-t border-white/10 pt-4">
+                        <img src="https://source.unsplash.com/48x48/?soccer,coach" alt="Player" class="w-10 h-10 rounded-full object-cover">
+                        <div>
+                            <p class="font-semibold text-white text-sm">Emeka O.</p>
+                            <p class="text-xs text-white/50">Semi-Professional Player</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reveal testimonial-card bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-6 md:p-8 transition-all duration-500 hover:border-[#D4AF37]/30 hover:-translate-y-2">
+                    <div class="flex gap-1 mb-4">
+                        <i data-lucide="star" class="w-5 h-5 text-[#D4AF37] fill-[#D4AF37]"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-[#D4AF37] fill-[#D4AF37]"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-[#D4AF37] fill-[#D4AF37]"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-[#D4AF37] fill-[#D4AF37]"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-[#D4AF37] fill-[#D4AF37]"></i>
+                    </div>
+                    <p class="text-white/70 text-sm leading-relaxed mb-6 italic">"IJABALL School of Thought is more than a football academy — it's a life-changing experience. The mentorship and values Coach Daniel instills go far beyond the pitch. Highly recommended."</p>
+                    <div class="flex items-center gap-3 border-t border-white/10 pt-4">
+                        <img src="https://source.unsplash.com/48x48/?soccer,fan" alt="Scout" class="w-10 h-10 rounded-full object-cover">
+                        <div>
+                            <p class="font-semibold text-white text-sm">David M.</p>
+                            <p class="text-xs text-white/50">Football Scout</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== BLOG ==================== -->
+    <section id="blog" class="relative py-20 md:py-32 px-4 md:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 reveal">
+                <span class="inline-block text-[#10B981] text-sm font-semibold tracking-widest uppercase mb-4">Insights</span>
+                <h2 class="font-heading font-extrabold text-4xl md:text-5xl lg:text-6xl leading-tight mb-4">
+                    From the
+                    <span class="bg-gradient-to-r from-[#D4AF37] to-[#E8C84A] bg-clip-text text-transparent">Coach's Desk</span>
+                </h2>
+                <p class="max-w-xl mx-auto text-white/50 text-lg">Articles, insights, and stories from Coach Daniel on football development and beyond.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6 md:gap-8">
+                <!-- Blog Post 1 -->
+                <article class="reveal group bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl overflow-hidden transition-all duration-500 hover:border-[#D4AF37]/30 hover:-translate-y-2">
+                    <div class="relative overflow-hidden aspect-video">
+                        <img src="img/tactical.jpg" alt="Blog post" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                        <div class="absolute top-4 left-4 px-3 py-1 bg-[#D4AF37] text-[#0a0a0a] text-xs font-bold rounded-full">Tactics</div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-white/40 text-xs uppercase tracking-wider">October 15, 2024</span>
+                        <h3 class="font-heading font-bold text-lg text-white mt-2 mb-3 group-hover:text-[#D4AF37] transition-colors">Building a Tactical Mindset in Young Players</h3>
+                        <p class="text-white/50 text-sm leading-relaxed mb-4">How to develop game intelligence and decision-making skills from an early age.</p>
+                        <a href="#" class="inline-flex items-center gap-2 text-[#D4AF37] font-semibold text-sm group-hover:gap-3 transition-all">
+                            Read Article <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article class="reveal group bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl overflow-hidden transition-all duration-500 hover:border-[#10B981]/30 hover:-translate-y-2">
+                    <div class="relative overflow-hidden aspect-video">
+                        <img src="img/development.jfif" alt="Blog post" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                        <div class="absolute top-4 left-4 px-3 py-1 bg-[#10B981] text-[#0a0a0a] text-xs font-bold rounded-full">Development</div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-white/40 text-xs uppercase tracking-wider">September 28, 2024</span>
+                        <h3 class="font-heading font-bold text-lg text-white mt-2 mb-3 group-hover:text-[#10B981] transition-colors">The Importance of Mental Conditioning in Football</h3>
+                        <p class="text-white/50 text-sm leading-relaxed mb-4">Why the strongest muscle in football is the mind, and how to train it effectively.</p>
+                        <a href="#" class="inline-flex items-center gap-2 text-[#10B981] font-semibold text-sm group-hover:gap-3 transition-all">
+                            Read Article <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 3 -->
+                <article class="reveal group bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl overflow-hidden transition-all duration-500 hover:border-[#D4AF37]/30 hover:-translate-y-2">
+                    <div class="relative overflow-hidden aspect-video">
+                        <img src="img/academy.jpg" alt="Blog post" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                        <div class="absolute top-4 left-4 px-3 py-1 bg-[#D4AF37] text-[#0a0a0a] text-xs font-bold rounded-full">Academy</div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-white/40 text-xs uppercase tracking-wider">September 10, 2024</span>
+                        <h3 class="font-heading font-bold text-lg text-white mt-2 mb-3 group-hover:text-[#D4AF37] transition-colors">Inside IJABALL: Our Training Philosophy Explained</h3>
+                        <p class="text-white/50 text-sm leading-relaxed mb-4">A deep dive into the principles and methodologies that make IJABALL unique.</p>
+                        <a href="#" class="inline-flex items-center gap-2 text-[#D4AF37] font-semibold text-sm group-hover:gap-3 transition-all">
+                            Read Article <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTACT ==================== -->
+    <section id="contact" class="relative py-20 md:py-32 px-4 md:px-8 bg-[#0d0d0d]">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16 reveal">
+                <span class="inline-block text-[#D4AF37] text-sm font-semibold tracking-widest uppercase mb-4">Get In Touch</span>
+                <h2 class="font-heading font-extrabold text-4xl md:text-5xl lg:text-6xl leading-tight mb-4">
+                    Start Your
+                    <span class="bg-gradient-to-r from-[#10B981] to-[#34D399] bg-clip-text text-transparent">Journey</span>
+                </h2>
+                <p class="max-w-xl mx-auto text-white/50 text-lg">Ready to elevate your game? Reach out and let's begin your transformation.</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-8 md:gap-12">
+                <!-- Contact Form -->
+                <div class="reveal bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-6 md:p-10">
+                    <form id="contactForm" class="space-y-6">
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-medium text-white/70 mb-2">First Name</label>
+                                <input type="text" required class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-white/30 focus:outline-none focus:border-[#D4AF37]/50 focus:ring-1 focus:ring-[#D4AF37]/30 transition-all duration-300" placeholder="John">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-white/70 mb-2">Last Name</label>
+                                <input type="text" required class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-white/30 focus:outline-none focus:border-[#D4AF37]/50 focus:ring-1 focus:ring-[#D4AF37]/30 transition-all duration-300" placeholder="Doe">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-white/70 mb-2">Email Address</label>
+                            <input type="email" required class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-white/30 focus:outline-none focus:border-[#D4AF37]/50 focus:ring-1 focus:ring-[#D4AF37]/30 transition-all duration-300" placeholder="john@example.com">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-white/70 mb-2">Program of Interest</label>
+                            <select class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white/70 focus:outline-none focus:border-[#D4AF37]/50 focus:ring-1 focus:ring-[#D4AF37]/30 transition-all duration-300 appearance-none cursor-pointer">
+                                <option value="" class="bg-[#1a1a1a]">Select a program...</option>
+                                <option value="youth" class="bg-[#1a1a1a]">Youth Development</option>
+                                <option value="elite" class="bg-[#1a1a1a]">Elite Academy</option>
+                                <option value="tactical" class="bg-[#1a1a1a]">Tactical Masterclass</option>
+                                <option value="goalkeeper" class="bg-[#1a1a1a]">Goalkeeper Training</option>
+                                <option value="mental" class="bg-[#1a1a1a]">Mental Conditioning</option>
+                                <option value="online" class="bg-[#1a1a1a]">Online Coaching</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-white/70 mb-2">Message</label>
+                            <textarea rows="4" class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-white/30 focus:outline-none focus:border-[#D4AF37]/50 focus:ring-1 focus:ring-[#D4AF37]/30 transition-all duration-300 resize-none" placeholder="Tell us about yourself and your goals..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full px-8 py-4 bg-gradient-to-r from-[#D4AF37] to-[#B8960C] text-[#0a0a0a] font-bold rounded-xl text-lg transition-all duration-300 hover:shadow-2xl hover:shadow-[#D4AF37]/40 transform hover:-translate-y-1 active:scale-95">
+                            Send Message
+                            <i data-lucide="send" class="inline-block w-5 h-5 ml-2"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="reveal space-y-6">
+                    <div class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-6 md:p-8 hover:border-[#D4AF37]/30 transition-all duration-500">
+                        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-[#D4AF37]/20 to-[#B8960C]/20 flex items-center justify-center mb-4">
+                            <i data-lucide="map-pin" class="w-6 h-6 text-[#D4AF37]"></i>
+                        </div>
+                        <h3 class="font-heading font-bold text-lg text-white mb-2">Training Location</h3>
+                        <p class="text-white/50 text-sm leading-relaxed">IJABALL Football Complex<br>Lekki Phase 1, Lagos<br>Nigeria</p>
+                    </div>
+
+                    <div class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-6 md:p-8 hover:border-[#10B981]/30 transition-all duration-500">
+                        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-[#10B981]/20 to-[#059669]/20 flex items-center justify-center mb-4">
+                            <i data-lucide="mail" class="w-6 h-6 text-[#10B981]"></i>
+                        </div>
+                        <h3 class="font-heading font-bold text-lg text-white mb-2">Email Us</h3>
+                        <p class="text-white/50 text-sm leading-relaxed">coachdaniel@ijaball.com<br>info@ijaball.com</p>
+                    </div>
+
+                    <div class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-6 md:p-8 hover:border-[#D4AF37]/30 transition-all duration-500">
+                        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-[#D4AF37]/20 to-[#B8960C]/20 flex items-center justify-center mb-4">
+                            <i data-lucide="phone" class="w-6 h-6 text-[#D4AF37]"></i>
+                        </div>
+                        <h3 class="font-heading font-bold text-lg text-white mb-2">Call Us</h3>
+                        <p class="text-white/50 text-sm leading-relaxed">+234 800 123 4567<br>+234 800 987 6543</p>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="flex gap-3">
+                        <a href="#" class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-[#D4AF37]/20 hover:border-[#D4AF37]/40 transition-all duration-300 group">
+                            <i data-lucide="twitter" class="w-5 h-5 text-white/60 group-hover:text-[#D4AF37] transition-colors"></i>
+                        </a>
+                        <a href="#" class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-[#D4AF37]/20 hover:border-[#D4AF37]/40 transition-all duration-300 group">
+                            <i data-lucide="instagram" class="w-5 h-5 text-white/60 group-hover:text-[#D4AF37] transition-colors"></i>
+                        </a>
+                        <a href="#" class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-[#D4AF37]/20 hover:border-[#D4AF37]/40 transition-all duration-300 group">
+                            <i data-lucide="youtube" class="w-5 h-5 text-white/60 group-hover:text-[#D4AF37] transition-colors"></i>
+                        </a>
+                        <a href="#" class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-[#D4AF37]/20 hover:border-[#D4AF37]/40 transition-all duration-300 group">
+                            <i data-lucide="linkedin" class="w-5 h-5 text-white/60 group-hover:text-[#D4AF37] transition-colors"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="relative py-12 px-4 md:px-8 border-t border-white/5">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <a href="#hero" class="flex items-center gap-3 mb-4 group">
+                        <div class="w-10 h-10 bg-gradient-to-br from-[#D4AF37] to-[#B8960C] rounded-lg flex items-center justify-center transform group-hover:rotate-6 transition-transform duration-300">
+                            <i data-lucide="shield" class="w-6 h-6 text-[#0a0a0a]"></i>
+                        </div>
+                        <div>
+                            <span class="font-heading font-extrabold text-lg tracking-tight text-white">IJABALL</span>
+                            <span class="block text-[10px] text-[#D4AF37] font-medium tracking-widest uppercase -mt-1">School of Thought</span>
+                        </div>
+                    </a>
+                    <p class="text-white/40 text-sm leading-relaxed max-w-xs">Transforming raw talent into football excellence. Building champions on and off the pitch.</p>
+                </div>
+                <div>
+                    <h4 class="font-heading font-bold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="text-white/40 text-sm hover:text-[#D4AF37] transition-colors">About Coach Daniel</a></li>
+                        <li><a href="#programs" class="text-white/40 text-sm hover:text-[#D4AF37] transition-colors">Our Programs</a></li>
+                        <li><a href="#gallery" class="text-white/40 text-sm hover:text-[#D4AF37] transition-colors">Gallery</a></li>
+                        <li><a href="#blog" class="text-white/40 text-sm hover:text-[#D4AF37] transition-colors">Blog</a></li>
+                        <li><a href="#contact" class="text-white/40 text-sm hover:text-[#D4AF37] transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-heading font-bold text-white mb-4">Newsletter</h4>
+                    <p class="text-white/40 text-sm mb-3">Get the latest updates from IJABALL.</p>
+                    <div class="flex gap-2">
+                        <input type="email" placeholder="Your email" class="flex-1 px-4 py-2.5 bg-white/5 border border-white/10 rounded-xl text-white text-sm placeholder-white/30 focus:outline-none focus:border-[#D4AF37]/50 transition-all">
+                        <button class="px-5 py-2.5 bg-gradient-to-r from-[#D4AF37] to-[#B8960C] text-[#0a0a0a] font-bold rounded-xl text-sm hover:shadow-lg hover:shadow-[#D4AF37]/30 transition-all">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <p class="text-white/30 text-sm">&copy; 2024 IJABALL School of Thought. All rights reserved.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="text-white/30 text-sm hover:text-[#D4AF37] transition-colors">Privacy Policy</a>
+                    <a href="#" class="text-white/30 text-sm hover:text-[#D4AF37] transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
